@@ -1,0 +1,1 @@
+creacion de archivo de texto para asegurar la creacion de la carpeta img
