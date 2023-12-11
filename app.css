@@ -3,32 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
-nav{
-    display: flex;
+
+:root{
+    --background-nav:#201710;
+    --item-nav:#b69451;
+
+    --blue: #3490dc;
+    --indigo: #6574cd;
+    --purple: #5517c1;
+    --pink: #f66d9b;
+    --red: #e3342f;
+    --orange: #f6993f;
+    --yellow: #ffed4a;
+    --green: #6d9165;
+    --teal: #4dc0b5;
+    --cyan: #00afff;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #3490dc;
+    --secondary: #6c757d;
+    --success: #6d9165;
+    --info: #00afff;
+    --warning: #ffed4a;
+    --danger: #e3342f;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    
 }
 
-.nav_left{
-    display: flex;
-    width: 50%;
-}
-.nav_left img{
-    width: 50px;
-    height: auto;
-}
 
-.nav_right{
-    display: flex;
-    width: 50%;
-    justify-content: end;
-    padding-right: 10px;
-    align-items: center;
-    gap: 10px;
-}
 
-.nav_right li{
-    font-size: 20px;
-    list-style: none;
-}
 
 main img{
     width: 100%;
