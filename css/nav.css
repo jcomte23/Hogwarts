@@ -32,3 +32,13 @@ nav{
     list-style: none;
     color: var(--item-nav);
 }
+
+@media only screen and (max-width: 600px) {
+    .nav_left{
+        width: 10%;
+    }
+
+    .nav_right{
+        width: 90%;
+    }
+}
