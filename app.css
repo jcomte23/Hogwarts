@@ -3,3 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main img{
+    width: 100%;
+    height: auto;
+}
