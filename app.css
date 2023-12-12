@@ -35,9 +35,20 @@
     
 }
 
-
 a{
     text-decoration: none;
+}
+
+.uno{
+    border: 1px solid red;
+}
+
+.dos{
+    border: 1px solid blue;
+}
+
+.tres{
+    border: 1px solid black;
 }
 
 main img{
