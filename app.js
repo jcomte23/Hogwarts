@@ -1,3 +1,19 @@
+document.addEventListener("DOMContentLoaded", function () {
+    let video = document.getElementById("hogwarts_video");
+    let toggleAudioButton = document.getElementById("toggleAudio");
+
+    toggleAudioButton.addEventListener("click", function () {
+        video.muted = !video.muted;
+        if (video.muted) {
+            toggleAudioButton.classList.remove("bi-volume-up-fill");
+            toggleAudioButton.classList.add("bi-volume-mute-fill");
+        }else{
+            toggleAudioButton.classList.remove("bi-volume-mute-fill");
+            toggleAudioButton.classList.add("bi-volume-up-fill");
+        }
+    });
+});
+
 // PASO 3
 const casas = {
     gryffindor: ["Valor, fuerza, audacia", "Mestizo, muggle, Sangre pura"],
