@@ -1,0 +1,13 @@
+@import url('../app.css');
+
+/* ========== */
+/* ===MAIN=== */
+/* ==========  */
+
+.section_title {
+    color: var(--white);
+    background-image: url('../img/hogwarts_fondo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

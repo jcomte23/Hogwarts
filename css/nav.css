@@ -4,21 +4,20 @@
 /* =NAV BAR= */
 /* =========  */
 
-nav{
+nav {
     background-color: var(--background-nav);
 }
 
-.navbar-brand{
+.navbar-brand {
     background-color: var(--background-nav);
     color: var(--item-nav);
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
     color: var(--light);
 }
 
-.logo-hogwarts{
+.logo-hogwarts {
     width: 20%;
     height: auto;
 }
-
