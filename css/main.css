@@ -3,14 +3,17 @@
 /* ========== */
 /* ===MAIN=== */
 /* ==========  */
+.section_title video {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
 
-.section_title {
-    color: var(--white);
-    background-image: url('../img/hogwarts_fondo.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+.section_title img{
+    width: 100%;
+    height: auto;
 }
