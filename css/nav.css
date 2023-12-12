@@ -18,14 +18,18 @@ nav {
 }
 
 .bi-volume-mute-fill{
+    position: absolute;
+    margin-left: 96%;
     color: var(--item-nav);
-    font-size: 28px;
+    font-size: 35px;
     margin-right: 10px;
 }
 
 .bi-volume-up-fill{
+    position: absolute;
+    margin-left: 96%;
     color: var(--item-nav);
-    font-size: 28px;
+    font-size: 35px;
     margin-right: 10px;
 }
 
