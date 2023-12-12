@@ -1,52 +1,24 @@
 @import url('../app.css');
+
 /* ========= */
 /* =NAV BAR= */
 /* =========  */
 
 nav{
-    display: flex;
     background-color: var(--background-nav);
 }
 
-.nav_left{
-    display: flex;
-    width: 50%;
-}
-.nav_left img{
-    margin: 1%;
-    width: 80px;
-    height: auto;
-}
-
-.nav_right{
-    display: flex;
-    width: 50%;
-    justify-content: end;
-    padding-right: 10px;
-    align-items: center;
-    gap: 15px;
-}
-
-.nav_right li{
-    list-style: none;
-}
-
-.nav_right li a{
-    font-size: 20px;
+.navbar-brand{
+    background-color: var(--background-nav);
     color: var(--item-nav);
 }
 
-.nav_right li a:hover{
-    font-size: 25px;
+.navbar-brand:hover{
     color: var(--light);
 }
 
-@media only screen and (max-width: 600px) {
-    .nav_left{
-        width: 10%;
-    }
-
-    .nav_right{
-        width: 90%;
-    }
+.logo-hogwarts{
+    width: 20%;
+    height: auto;
 }
+
