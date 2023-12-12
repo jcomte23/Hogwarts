@@ -17,6 +17,12 @@ nav {
     color: var(--light);
 }
 
+.bi-volume-mute-fill{
+    color: var(--white);
+    font-size: 28px;
+    margin-right: 10px;
+}
+
 .logo-hogwarts {
     width: 10%;
     height: auto;
