@@ -38,7 +38,6 @@
     background-size: cover;
     background-position: center;
     font-family: 'Harry Potter', sans-serif;
-    color: var(--item-nav);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +45,9 @@
 }
 
 .section_houses h2{
+    color: #B8860B;
     font-size: 100px;
+    text-shadow: 1px 1px 3px #885920, 2px 2px 3px #885920, 3px 3px 3px #885920;
 }
 .gallery_houses{
     display: flex;
