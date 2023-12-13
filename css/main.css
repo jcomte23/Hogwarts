@@ -4,6 +4,11 @@
 /* ========== */
 /* ===MAIN=== */
 /* ==========  */
+
+.section_title{
+    height: 700px;
+}
+
 .section_title video {
     width: 100%; /* Ajusta el ancho según tus necesidades */
     height: auto; /* Ajusta la altura según tus necesidades */
@@ -27,3 +32,34 @@
     margin-top: 10%;
 }
 
+.section_houses{
+    background-image: url("../img/fondocasas.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--item-nav);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery_houses{
+    display: flex;
+    width: 900px;
+    height: 516px;
+}
+
+.gallery_houses img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.gallery_houses img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
