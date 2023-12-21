@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    
     let video = document.getElementById("hogwarts_video");
     let toggleAudioButton = document.getElementById("toggleAudio");
 
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // PASO 3
 const casas = {
-    gryffindor: ["Valor, fuerza, audacia", "Mestizo, muggle, Sangre pura"],
+    Gryffindor: ["Valor, fuerza, audacia", "Mestizo, muggle, Sangre pura"],
     Hufflepuff: ["Justicia, Lealtad, Paciencia", "Mestizo, muggle"],
     Ravenclaw: ["Creatividad, Erudición, Inteligencia", "Mestizo, muggle, Sangre pura"],
     Slytherin: ["Ambición, Determinación, Astucia", "Sangre Pura"]
@@ -89,7 +90,7 @@ const patronusAnimals = [
 const estudiante = {
     nombre: "Javier Cómbita Téllez",
     edad: 25,
-    familia: "Malfoy ",
+    familia: "Malfoy",
     linaje: casas.Slytherin[1],
     casa: "Slytherin",
     animalPatronus: undefined,
@@ -106,7 +107,6 @@ const clases = {
     animalesMagicos: "Profesor David Filch",
     historiaDeMagia: "Profesor Ronald Sprout"
 }
-
 
 // PASO 4
 const claseTransformaciones = {
@@ -155,8 +155,7 @@ estudiante.animalPatronus = defensaContraLasArtesOscuras.generalAnimalPatronus()
 const boggartEjemplo = {
     enfrentamiento: claseTransformaciones.enfrentarBoggart("dementor")
 }
-console.log(estudiante);
-console.log(boggartEjemplo)
+
 
 
 
