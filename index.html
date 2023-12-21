@@ -26,7 +26,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg p-0">
+        <nav class="navbar navbar-expand-lg p-0 fixed-top">
             <div class="container-fluid row p-0 m-0">
                 <div class="col-sm-12 col-md-6">
                     <a class="navbar-brand d-flex flex-sm-column flex-md-row align-items-center" href="#">
@@ -37,8 +37,8 @@
                 </div>
                 <div class="col-sm-12 col-md-6 d-flex justify-content-sm-center justify-content-md-end">
                     <a class="navbar-brand" href="#">Inicio</a>
-                    <a class="navbar-brand" href="#">Casas</a>
-                    <a class="navbar-brand" href="#">Profesores</a>
+                    <a class="navbar-brand" href="#houses">Casas</a>
+                    <a class="navbar-brand" href="#teachers">Profesores</a>
                 </div>
             </div>
         </nav>
@@ -51,44 +51,50 @@
             </video>
             <i id="toggleAudio" class="bi bi-volume-mute-fill"></i>
             <img src="./img/name_school.webp" alt="nombre colegio" width="2399" height="724">
+            <a class="btn btn-warning btn-lg" href="#" role="button">Registrate</a>
         </section>
         <section class="section_houses py-5">
             <h2>Casas</h2>
-            <article class="gallery_houses">
+            <article class="gallery_houses" id="houses">
                 <img src="./img/gryffindor.webp" alt="gryffindor" width="720" height="1280">
                 <img src="./img/original3.jpg" alt="" width="720" height="1280">
                 <img src="./img/slytherin.webp" alt="slytherin" width="564" height="1002">
                 <img src="./img/original3.jpeg" alt="" width="720" height="1280">
             </article>
         </section>
-        <section class="section_teachers py-5">
+        <section class="section_teachers py-5" id="teachers">
             <h2>Profesores</h2>
             <article class="gallery_teachers">
-                <img src="https://media.harrypotterfanzone.com/philosophers-stone-20-years-of-movie-magic-mcgonagall-poster.jpg" alt="gryffindor" width="720" height="1280">
-                <img src="https://w.forfun.com/fetch/74/742834fbba544e40f1cb75929c53f7c1.jpeg?h=600&r=0.5" alt="" width="720" height="1280">
-                <img src="https://i.pinimg.com/564x/a9/0b/3f/a90b3f88fb8eb79790e0fe2350ef6a56.jpg" alt="slytherin" width="564" height="1002">
-                <img src="https://pm1.aminoapps.com/6628/ecfe1e0d9316c58d1547951992a8251da01ecc4a_hq.jpg" alt="" width="720" height="1280">
+                <img src="https://media.harrypotterfanzone.com/philosophers-stone-20-years-of-movie-magic-mcgonagall-poster.jpg"
+                    alt="gryffindor" width="720" height="1280">
+                <img src="https://w.forfun.com/fetch/74/742834fbba544e40f1cb75929c53f7c1.jpeg?h=600&r=0.5" alt=""
+                    width="720" height="1280">
+                <img src="https://i.pinimg.com/564x/a9/0b/3f/a90b3f88fb8eb79790e0fe2350ef6a56.jpg" alt="slytherin"
+                    width="564" height="1002">
+                <img src="https://pm1.aminoapps.com/6628/ecfe1e0d9316c58d1547951992a8251da01ecc4a_hq.jpg" alt=""
+                    width="720" height="1280">
             </article>
         </section>
     </main>
-    <footer class="footer p-4">
+    <!-- <footer class="footer p-4">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h5>Información de Contacto</h5>
-              <p>Dirección: 123 Calle Principal, Ciudad</p>
-              <p>Email: info@example.com</p>
-              <p>Teléfono: (123) 456-7890</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Información de Contacto</h5>
+                    <p>Dirección: 123 Calle Principal, Ciudad</p>
+                    <p>Email: info@example.com</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                </div>
+                <div class="col-md-6 text-md-right social-icons">
+                    <h5>Síguenos en Redes Sociales</h5>
+                    <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-            <div class="col-md-6 text-md-right social-icons">
-              <h5>Síguenos en Redes Sociales</h5>
-              <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
         </div>
-      </footer>
+    </footer> -->
+
     <script src="./bootstrap/bootstrap.min.js"></script>
     <script src="./js/estudiantesHogwarts.js"></script>
     <script src="./app.js"></script>

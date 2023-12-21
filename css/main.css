@@ -33,6 +33,12 @@
     margin-top: 10%;
 }
 
+
+.section_title a{
+    margin-left: 47%;
+    margin-right: 44%;
+}
+
 .section_houses{
     background-image: url("../img/fondocasas.jpg");
     background-size: cover;
