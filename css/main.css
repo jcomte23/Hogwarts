@@ -113,3 +113,7 @@
     opacity: 1;
     filter: contrast(120%);
 }
+
+.main_crud{
+    margin-top: 6% !important;
+}
