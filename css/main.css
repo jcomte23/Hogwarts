@@ -69,3 +69,41 @@
     opacity: 1;
     filter: contrast(120%);
 }
+
+
+.section_teachers{
+    background-image: url("https://get.wallhere.com/photo/1920x1080-px-castle-dark-fantasy-room-1590281.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Harry Potter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_teachers h2{
+    color: #B8860B;
+    font-size: 100px;
+    text-shadow: 1px 1px 3px #885920, 2px 2px 3px #885920, 3px 3px 3px #885920;
+}
+.gallery_teachers{
+    display: flex;
+    width: 900px;
+    height: 516px;
+}
+
+.gallery_teachers img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.gallery_teachers img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
