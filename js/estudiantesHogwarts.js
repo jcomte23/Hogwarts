@@ -87,7 +87,6 @@ let baseEstudiantes = [{
 
 
 
-
 function cargarEstudiantes() {
     
     tbody.innerHTML=""
