@@ -1,5 +1,5 @@
-let tbody=document.querySelector("#tbody")
-tbody.addEventListener("click",function (event) {
+let tbody = document.querySelector("#tbody")
+tbody.addEventListener("click", function (event) {
     if (event.target.classList.contains("delete-student")) {
         const id = event.target.getAttribute("data-id")
         eliminarEstudiante(id)
@@ -14,7 +14,7 @@ const casas = {
 }
 
 let baseEstudiantes = [{
-    id:1,
+    id: 1,
     nombre: "Javier Cómbita Téllez",
     edad: 25,
     familia: "Malfoy",
@@ -24,7 +24,7 @@ let baseEstudiantes = [{
     cualidades: casas.Slytherin[0]
 },
 {
-    id:2,
+    id: 2,
     nombre: "Luna Lovegood",
     edad: 16,
     familia: "Lovegood",
@@ -34,7 +34,7 @@ let baseEstudiantes = [{
     cualidades: casas.Ravenclaw[0],
 },
 {
-    id:3,
+    id: 3,
     nombre: "Cedric Diggory",
     edad: 17,
     familia: "Diggory",
@@ -44,7 +44,7 @@ let baseEstudiantes = [{
     cualidades: casas.Hufflepuff[0],
 },
 {
-    id:4,
+    id: 4,
     nombre: "Hermione Granger",
     edad: 16,
     familia: "Granger",
@@ -54,7 +54,7 @@ let baseEstudiantes = [{
     cualidades: casas.Gryffindor[0],
 },
 {
-    id:5,
+    id: 5,
     nombre: "Draco Malfoy",
     edad: 17,
     familia: "Malfoy",
@@ -64,7 +64,7 @@ let baseEstudiantes = [{
     cualidades: casas.Slytherin[0],
 },
 {
-    id:6,
+    id: 6,
     nombre: "Ginny Weasley",
     edad: 15,
     familia: "Weasley",
@@ -74,7 +74,7 @@ let baseEstudiantes = [{
     cualidades: casas.Gryffindor[0],
 },
 {
-    id:7,
+    id: 7,
     nombre: "Nymphadora Tonks",
     edad: 22,
     familia: "Tonks",
@@ -85,19 +85,62 @@ let baseEstudiantes = [{
 }
 ]
 
+function registrarEstudiante() {
+    const nombre = document.getElementById("nombre")
+    const edad = document.getElementById("edad")
+    const familia = document.getElementById("familia")
+    const casa = document.getElementById("casa")
+    let linaje
+    let cualidades
 
+    switch (casa.value) {
+        case "Slytherin":
+            linaje = casas.Slytherin[1]
+            cualidades = casas.Slytherin[0]
+            break;
+        case "Gryffindor":
+            linaje = casas.Gryffindor[1]
+            cualidades = casas.Gryffindor[0]
+            break;
+        case "Hufflepuff":
+            linaje = casas.Hufflepuff[1]
+            cualidades = casas.Hufflepuff[0]
+            break;
+        case "Ravenclaw":
+            linaje = casas.Ravenclaw[1]
+            cualidades = casas.Ravenclaw[0]
+            break;
+        default:
+            break;
+    }
+
+    const max=(baseEstudiantes.length+1)
+    let newEstudent = {
+        id: max,
+        nombre: nombre.value,
+        edad: edad.value,
+        familia: familia.value,
+        linaje: linaje,
+        casa: casa.value,
+        animalPatronus: undefined,
+        cualidades: cualidades,
+    }
+
+    baseEstudiantes.push(newEstudent)
+    cargarEstudiantes()
+}
 
 function cargarEstudiantes() {
-    
-    tbody.innerHTML=""
-    let cont=0
+
+    tbody.innerHTML = ""
+    let cont = 0
     baseEstudiantes.forEach(element => {
-        const {id,nombre,familia,casa,linaje}=element
+        const { id, nombre, familia, casa, edad, linaje } = element
         cont++
-        tbody.innerHTML+=`
+        tbody.innerHTML += `
         <tr>
             <th scope="row">${cont}</th>
-            <td>${nombre}</td>
+            <td>${nombre} (${edad} años)</td>
             <td>${familia}</td>
             <td>${casa}</td>
             <td>${linaje}</td>
@@ -112,7 +155,7 @@ function cargarEstudiantes() {
 
 function eliminarEstudiante(id) {
     baseEstudiantes = baseEstudiantes.filter(estudiante => estudiante.id != id);
-    
+
     cargarEstudiantes()
 }
 
