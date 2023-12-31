@@ -4,6 +4,11 @@ tbody.addEventListener("click", function (event) {
         const id = event.target.getAttribute("data-id")
         eliminarEstudiante(id)
     }
+
+    if (event.target.classList.contains("patronus-student")) {
+        const id = event.target.getAttribute("data-id")
+        eliminarEstudiante(id)
+    }
 })
 
 const casas = {
@@ -12,6 +17,68 @@ const casas = {
     Ravenclaw: ["Creatividad, Erudición, Inteligencia", "Mestizo, muggle, Sangre pura"],
     Slytherin: ["Ambición, Determinación, Astucia", "Sangre Pura"]
 }
+
+const patronusAnimals = [
+    'Ciervo',
+    'Liebre',
+    'Nutria',
+    'Zorro plateado',
+    'Gato',
+    'Lechuza',
+    'Tejón',
+    'Lince',
+    'Tigre',
+    'Halcón',
+    'Lobo',
+    'Mapache',
+    'Golondrina',
+    'León',
+    'Cisne',
+    'Delfín',
+    'Águila',
+    'Zorro',
+    'Cervatillo',
+    'Foca',
+    'Caballo',
+    'Conejo',
+    'Murciélago',
+    'Coyote',
+    'Búho',
+    'Orca',
+    'Pájaro Carpintero',
+    'Caballo Alado',
+    'Pez',
+    'Erizo',
+    'Rata',
+    'Jabalí',
+    'Galgo',
+    'Castor',
+    'Chotacabras',
+    'Gavilán',
+    'Jaguar',
+    'Gran Danés',
+    'Cerdo',
+    'Elefante',
+    'Lirones',
+    'Picaflor',
+    'Pez Espada',
+    'Sapo',
+    'Serpiente',
+    'Turón',
+    'Leopardo',
+    'Pegaso',
+    'Potro',
+    'Zarigüeya',
+    'Oso',
+    'Nightingale',
+    'Hormiga',
+    'Basset Hound',
+    'Búho Nival',
+    'Nutria de Mar',
+    'Doe (cierva)',
+    'Hare (liebre)',
+    'Glow Worm (luciérnaga)',
+];
 
 let baseEstudiantes = [{
     id: 1,
@@ -135,7 +202,7 @@ function cargarEstudiantes() {
     tbody.innerHTML = ""
     let cont = 0
     baseEstudiantes.forEach(element => {
-        const { id, nombre, familia, casa, edad, linaje } = element
+        const { id, nombre, familia, casa, edad, linaje, animalPatronus } = element
         cont++
         tbody.innerHTML += `
         <tr>
@@ -144,7 +211,9 @@ function cargarEstudiantes() {
             <td>${familia}</td>
             <td>${casa}</td>
             <td>${linaje}</td>
+            <td>${animalPatronus}</td>
             <td>
+                <button type="button" class="btn btn-primary patronus-student" data-id="${id}">Patronus</button>
                 <button type="button" class="btn btn-danger delete-student" data-id="${id}">Eliminar</button>
             </td>
         </tr>
@@ -152,11 +221,15 @@ function cargarEstudiantes() {
     });
 }
 
-
 function eliminarEstudiante(id) {
     baseEstudiantes = baseEstudiantes.filter(estudiante => estudiante.id != id);
 
     cargarEstudiantes()
+}
+
+function revelarPatronusEstudiante(id) {
+    
+    patronusAnimals[Math.floor(Math.random() * patronusAnimals.length)]
 }
 
 cargarEstudiantes()

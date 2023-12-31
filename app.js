@@ -23,67 +23,7 @@ const casas = {
     Slytherin: ["Ambición, Determinación, Astucia", "Sangre Pura"]
 }
 
-const patronusAnimals = [
-    'Ciervo',
-    'Liebre',
-    'Nutria',
-    'Zorro plateado',
-    'Gato',
-    'Lechuza',
-    'Tejón',
-    'Lince',
-    'Tigre',
-    'Halcón',
-    'Lobo',
-    'Mapache',
-    'Golondrina',
-    'León',
-    'Cisne',
-    'Delfín',
-    'Águila',
-    'Zorro',
-    'Cervatillo',
-    'Foca',
-    'Caballo',
-    'Conejo',
-    'Murciélago',
-    'Coyote',
-    'Búho',
-    'Orca',
-    'Pájaro Carpintero',
-    'Caballo Alado',
-    'Pez',
-    'Erizo',
-    'Rata',
-    'Jabalí',
-    'Galgo',
-    'Castor',
-    'Chotacabras',
-    'Gavilán',
-    'Jaguar',
-    'Gran Danés',
-    'Cerdo',
-    'Elefante',
-    'Lirones',
-    'Picaflor',
-    'Pez Espada',
-    'Sapo',
-    'Serpiente',
-    'Turón',
-    'Leopardo',
-    'Pegaso',
-    'Potro',
-    'Zarigüeya',
-    'Oso',
-    'Nightingale',
-    'Hormiga',
-    'Basset Hound',
-    'Búho Nival',
-    'Nutria de Mar',
-    'Doe (cierva)',
-    'Hare (liebre)',
-    'Glow Worm (luciérnaga)',
-];
+
 
 
 // PASO 1
@@ -152,6 +92,7 @@ const defensaContraLasArtesOscuras = {
 }
 
 estudiante.animalPatronus = defensaContraLasArtesOscuras.generalAnimalPatronus()
+
 const boggartEjemplo = {
     enfrentamiento: claseTransformaciones.enfrentarBoggart("dementor")
 }
