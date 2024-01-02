@@ -7,7 +7,7 @@ tbody.addEventListener("click", function (event) {
 
     if (event.target.classList.contains("patronus-student")) {
         const id = event.target.getAttribute("data-id")
-        eliminarEstudiante(id)
+        revelarPatronusEstudiante(id)
     }
 })
 
@@ -181,7 +181,7 @@ function registrarEstudiante() {
             break;
     }
 
-    const max=(baseEstudiantes.length+1)
+    const max = (baseEstudiantes.length + 1)
     let newEstudent = {
         id: max,
         nombre: nombre.value,
@@ -223,13 +223,18 @@ function cargarEstudiantes() {
 
 function eliminarEstudiante(id) {
     baseEstudiantes = baseEstudiantes.filter(estudiante => estudiante.id != id);
-
     cargarEstudiantes()
 }
 
 function revelarPatronusEstudiante(id) {
-    
-    patronusAnimals[Math.floor(Math.random() * patronusAnimals.length)]
+    const animal = patronusAnimals[Math.floor(Math.random() * patronusAnimals.length)]
+    baseEstudiantes.forEach((element, index) => {
+        if (element.id === Number(id) && element.animalPatronus===undefined) {
+            element.animalPatronus = animal
+            alert("Patornus Revelado")
+        }
+    })
+    cargarEstudiantes()
 }
 
 cargarEstudiantes()
